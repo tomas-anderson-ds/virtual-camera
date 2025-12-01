@@ -1,9 +1,5 @@
 //---------------------------------------------------------------------
-//
 // Camera for FireMonkey component
-//
-// Copyright (c) 2016-2022 WINSOFT
-//
 //---------------------------------------------------------------------
 
 unit FCameraE;
@@ -273,5 +269,6 @@ begin
   RegisterPropertyEditor(TypeInfo(string), TFCamera, 'OutputFileName', TOutputFileNameProperty);
   RegisterComponentEditor(TFCamera, TFCameraEditor);
 end;
+
 
 end.
