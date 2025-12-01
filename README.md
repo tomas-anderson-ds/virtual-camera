@@ -2,6 +2,5 @@
 
 Real-time face swap application for Windows PC
 
-![TD00000003](https://github.com/user-attachments/assets/7abc1a4b-a255-482d-90f4-38eb4f50c54a)
-<img src="https://github.com/user-attachments/assets/7abc1a4b-a255-482d-90f4-38eb4f50c54a.jpg" width="500" height="600">
+<img src="https://github.com/tomas-anderson-ds/virtual-camera/blob/main/images/TD00000003.jpg" width="300" height="300"> <img src="https://github.com/tomas-anderson-ds/virtual-camera/blob/main/images/TD00000001.jpg" width="300" height="300">
 
