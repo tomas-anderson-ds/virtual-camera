@@ -1,4 +1,4 @@
-Download the files and put them in this folder
+Download the files and put them in this folder - Win64/Release
 
 https://github.com/tomas-anderson-ds/virtual-camera/releases/download/v1.0.0.7/detect.nn
 https://github.com/tomas-anderson-ds/virtual-camera/releases/download/v1.0.0.7/landmark.nn
@@ -8,3 +8,4 @@ https://github.com/tomas-anderson-ds/virtual-camera/releases/download/v1.0.0.7/s
 https://github.com/tomas-anderson-ds/virtual-camera/releases/download/v1.0.0.7/latent.data
 https://github.com/tomas-anderson-ds/virtual-camera/releases/download/v1.0.0.7/Project1.exe
 https://github.com/tomas-anderson-ds/virtual-camera/releases/download/v1.0.0.7/vcamera.dll
+
