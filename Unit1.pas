@@ -1011,29 +1011,29 @@ begin
 
   if RegistryIni.ReadString(HKEY_CURRENT_USER, 'SOFTWARE\SDVirtualCamera', 'Language', 'english') = 'russian' then
   begin
-    Form1.Label2.Text := 'Виртуальная Камера - ' + ProgramVersion;
-    Caption := 'Виртуальная Камера - ' + ProgramVersion;
+    Form1.Label2.Text := 'Р’РёСЂС‚СѓР°Р»СЊРЅР°СЏ РљР°РјРµСЂР° - ' + ProgramVersion;
+    Caption := 'Р’РёСЂС‚СѓР°Р»СЊРЅР°СЏ РљР°РјРµСЂР° - ' + ProgramVersion;
 
     Language:= 0;
     Image4.Hint:= 'Switch to English';
-    Button3.Text:= 'Старт';
+    Button3.Text:= 'РЎС‚Р°СЂС‚';
 
-    LabelSharpness.Text:= 'Чёткость';
-    LabelContrast.Text:= 'Контрастность';
-    LabelBrightness.Text:= 'Яркость';
-    LabelSaturation.Text:= 'Насыщенность';
+    LabelSharpness.Text:= 'Р§С‘С‚РєРѕСЃС‚СЊ';
+    LabelContrast.Text:= 'РљРѕРЅС‚СЂР°СЃС‚РЅРѕСЃС‚СЊ';
+    LabelBrightness.Text:= 'РЇСЂРєРѕСЃС‚СЊ';
+    LabelSaturation.Text:= 'РќР°СЃС‹С‰РµРЅРЅРѕСЃС‚СЊ';
 
-    Button1.Text:= 'Открыть...';
+    Button1.Text:= 'РћС‚РєСЂС‹С‚СЊ...';
 
-    Image3.Hint:= 'Открыть настройки камеры';
-    Image7.Hint:= 'Показывать количество кадров в секунду';
+    Image3.Hint:= 'РћС‚РєСЂС‹С‚СЊ РЅР°СЃС‚СЂРѕР№РєРё РєР°РјРµСЂС‹';
+    Image7.Hint:= 'РџРѕРєР°Р·С‹РІР°С‚СЊ РєРѕР»РёС‡РµСЃС‚РІРѕ РєР°РґСЂРѕРІ РІ СЃРµРєСѓРЅРґСѓ';
 
     if PerformanceMode = 0 then
-      Image9.Hint:= 'Включить режим высокой производительности'
+      Image9.Hint:= 'Р’РєР»СЋС‡РёС‚СЊ СЂРµР¶РёРј РІС‹СЃРѕРєРѕР№ РїСЂРѕРёР·РІРѕРґРёС‚РµР»СЊРЅРѕСЃС‚Рё'
     else if PerformanceMode = 1 then
-      Image9.Hint:= 'Отключить режим высокой производительности';
+      Image9.Hint:= 'РћС‚РєР»СЋС‡РёС‚СЊ СЂРµР¶РёРј РІС‹СЃРѕРєРѕР№ РїСЂРѕРёР·РІРѕРґРёС‚РµР»СЊРЅРѕСЃС‚Рё';
 
-    Label1.Text := '0 : кадр/с';
+    Label1.Text := '0 : РєР°РґСЂ/СЃ';
   end
   else if RegistryIni.ReadString(HKEY_CURRENT_USER, 'SOFTWARE\SDVirtualCamera', 'Language', 'english') = 'english' then
   begin
@@ -1041,7 +1041,7 @@ begin
     Caption := 'Virtual Camera - ' + ProgramVersion;
 
     Language:= 1;
-    Image4.Hint:= 'Переключиться на Русский';
+    Image4.Hint:= 'РџРµСЂРµРєР»СЋС‡РёС‚СЊСЃСЏ РЅР° Р СѓСЃСЃРєРёР№';
     Button3.Text:= 'Start';
 
     LabelSharpness.Text:= 'Sharpness';
@@ -1172,7 +1172,7 @@ begin
      if Language = 1 then
        FMessage:= 'You must restart the application to apply these changes. Restart application?'
      else if Language = 0 then
-       FMessage:= 'Чтобы изменения вступили в силу необходимо перезапустить приложение. Перезапустить программу?';
+       FMessage:= 'Р§С‚РѕР±С‹ РёР·РјРµРЅРµРЅРёСЏ РІСЃС‚СѓРїРёР»Рё РІ СЃРёР»Сѓ РЅРµРѕР±С…РѕРґРёРјРѕ РїРµСЂРµР·Р°РїСѓСЃС‚РёС‚СЊ РїСЂРёР»РѕР¶РµРЅРёРµ. РџРµСЂРµР·Р°РїСѓСЃС‚РёС‚СЊ РїСЂРѕРіСЂР°РјРјСѓ?';
 
      if MessageDlg(FMessage, mtConfirmation, [mbYes, mbNo], 0, mbYes) = mrYes then
      begin
@@ -1188,7 +1188,7 @@ begin
     if Language = 1 then
        FMessage:= 'You must restart the application to apply these changes. Restart application?'
      else if Language = 0 then
-       FMessage:= 'Чтобы изменения вступили в силу необходимо перезапустить приложение. Перезапустить программу?';
+       FMessage:= 'Р§С‚РѕР±С‹ РёР·РјРµРЅРµРЅРёСЏ РІСЃС‚СѓРїРёР»Рё РІ СЃРёР»Сѓ РЅРµРѕР±С…РѕРґРёРјРѕ РїРµСЂРµР·Р°РїСѓСЃС‚РёС‚СЊ РїСЂРёР»РѕР¶РµРЅРёРµ. РџРµСЂРµР·Р°РїСѓСЃС‚РёС‚СЊ РїСЂРѕРіСЂР°РјРјСѓ?';
 
     if MessageDlg(FMessage, mtConfirmation, [mbYes, mbNo], 0, mbYes) = mrYes then
     begin
@@ -1384,7 +1384,7 @@ begin
     FSourceMouthPoint.X := FLandmarkData.Points[60].X;
     FSourceMouthPoint.Y := FLandmarkData.Points[62].Y + ((FLandmarkData.Points[60].Y - FLandmarkData.Points[62].Y) / 2);
 
-    //точка уровня глаз
+    //С‚РѕС‡РєР° СѓСЂРѕРІРЅСЏ РіР»Р°Р·
     FSourceEyePoint.X:= (FLandmarkData.Points[72].X);
     FSourceEyePoint.Y:= (FLandmarkData.Points[72].Y);
   end
@@ -1393,7 +1393,7 @@ begin
     FSourceMouthPoint.X := FLandmarkData.Points[14].X;
     FSourceMouthPoint.Y := FLandmarkData.Points[13].Y + ((FLandmarkData.Points[14].Y - FLandmarkData.Points[13].Y) / 2);
 
-    //точка уровня глаз
+    //С‚РѕС‡РєР° СѓСЂРѕРІРЅСЏ РіР»Р°Р·
     FSourceEyePoint.X:= (FLandmarkData.Points[6].X);
     FSourceEyePoint.Y:= (FLandmarkData.Points[6].Y + ((FLandmarkData.Points[168].Y - FLandmarkData.Points[6].Y) / 2));
   end;
@@ -1525,36 +1525,36 @@ begin
     Language:= 0;
     Image4.Hint:= 'Switch to English';
     if Button3.Text = 'Start' then
-      Button3.Text:= 'Старт';
+      Button3.Text:= 'РЎС‚Р°СЂС‚';
     if Button3.Text = 'Stop' then
-      Button3.Text:= 'Стоп';
+      Button3.Text:= 'РЎС‚РѕРї';
 
-    LabelSharpness.Text:= 'Чёткость';
-    LabelContrast.Text:= 'Контрастность';
-    LabelBrightness.Text:= 'Яркость';
-    LabelSaturation.Text:= 'Насыщенность';
+    LabelSharpness.Text:= 'Р§С‘С‚РєРѕСЃС‚СЊ';
+    LabelContrast.Text:= 'РљРѕРЅС‚СЂР°СЃС‚РЅРѕСЃС‚СЊ';
+    LabelBrightness.Text:= 'РЇСЂРєРѕСЃС‚СЊ';
+    LabelSaturation.Text:= 'РќР°СЃС‹С‰РµРЅРЅРѕСЃС‚СЊ';
 
-    Button1.Text:= 'Открыть...';
+    Button1.Text:= 'РћС‚РєСЂС‹С‚СЊ...';
 
-    Image3.Hint:= 'Открыть настройки камеры';
-    Image7.Hint:= 'Показывать количество кадров в секунду';
+    Image3.Hint:= 'РћС‚РєСЂС‹С‚СЊ РЅР°СЃС‚СЂРѕР№РєРё РєР°РјРµСЂС‹';
+    Image7.Hint:= 'РџРѕРєР°Р·С‹РІР°С‚СЊ РєРѕР»РёС‡РµСЃС‚РІРѕ РєР°РґСЂРѕРІ РІ СЃРµРєСѓРЅРґСѓ';
 
     if PerformanceMode = 0 then
-      Image9.Hint:= 'Включить режим высокой производительности'
+      Image9.Hint:= 'Р’РєР»СЋС‡РёС‚СЊ СЂРµР¶РёРј РІС‹СЃРѕРєРѕР№ РїСЂРѕРёР·РІРѕРґРёС‚РµР»СЊРЅРѕСЃС‚Рё'
     else if PerformanceMode = 1 then
-      Image9.Hint:= 'Отключить режим высокой производительности';
+      Image9.Hint:= 'РћС‚РєР»СЋС‡РёС‚СЊ СЂРµР¶РёРј РІС‹СЃРѕРєРѕР№ РїСЂРѕРёР·РІРѕРґРёС‚РµР»СЊРЅРѕСЃС‚Рё';
 
-    Form1.Label2.Text := 'Виртуальная Камера - ' + ProgramVersion;
-    Caption:= 'Виртуальная Камера - ' + ProgramVersion;
+    Form1.Label2.Text := 'Р’РёСЂС‚СѓР°Р»СЊРЅР°СЏ РљР°РјРµСЂР° - ' + ProgramVersion;
+    Caption:= 'Р’РёСЂС‚СѓР°Р»СЊРЅР°СЏ РљР°РјРµСЂР° - ' + ProgramVersion;
   end
   else if RegistryIni.ReadString(HKEY_CURRENT_USER, 'SOFTWARE\SDVirtualCamera', 'Language', 'russian') = 'russian' then
   begin
     RegistryIni.WriteString(HKEY_CURRENT_USER, 'SOFTWARE\SDVirtualCamera', 'Language', 'english');
     Language:= 1;
-    Image4.Hint:= 'Переключиться на Русский';
-    if Button3.Text = 'Старт' then
+    Image4.Hint:= 'РџРµСЂРµРєР»СЋС‡РёС‚СЊСЃСЏ РЅР° Р СѓСЃСЃРєРёР№';
+    if Button3.Text = 'РЎС‚Р°СЂС‚' then
       Button3.Text:= 'Start';
-    if Button3.Text = 'Стоп' then
+    if Button3.Text = 'РЎС‚РѕРї' then
       Button3.Text:= 'Stop';
 
     LabelSharpness.Text:= 'Sharpness';
@@ -1782,7 +1782,7 @@ begin
         Camera.Free;
         Camera:= nil;
 
-        Button3.Text := 'Старт';
+        Button3.Text := 'РЎС‚Р°СЂС‚';
         TrackBarSharpness.SetFocus;
 
         if Assigned(Image1.Bitmap) then
@@ -2063,7 +2063,7 @@ begin
     FTargetMouthPoint.X := TargetFaceLandmarkData.Points[60].X;
     FTargetMouthPoint.Y := TargetFaceLandmarkData.Points[62].Y + ((TargetFaceLandmarkData.Points[60].Y - TargetFaceLandmarkData.Points[62].Y) / 2);
 
-    //точка уровня глаз
+    //С‚РѕС‡РєР° СѓСЂРѕРІРЅСЏ РіР»Р°Р·
     FTargetEyePoint.X:= (TargetFaceLandmarkData.Points[72].X);
     FTargetEyePoint.Y:= (TargetFaceLandmarkData.Points[72].Y);
   end
@@ -2072,7 +2072,7 @@ begin
     FTargetMouthPoint.X := TargetFaceLandmarkData.Points[14].X;
     FTargetMouthPoint.Y := TargetFaceLandmarkData.Points[13].Y + ((TargetFaceLandmarkData.Points[14].Y - TargetFaceLandmarkData.Points[13].Y) / 2);
 
-    //точка уровня глаз
+    //С‚РѕС‡РєР° СѓСЂРѕРІРЅСЏ РіР»Р°Р·
     FTargetEyePoint.X:= (TargetFaceLandmarkData.Points[6].X);
     FTargetEyePoint.Y:= ((TargetFaceLandmarkData.Points[6].Y + ((TargetFaceLandmarkData.Points[168].Y - TargetFaceLandmarkData.Points[6].Y) / 2)));
   end;
@@ -2635,7 +2635,7 @@ begin
   begin
     // Caption := 'FPS: ' + FloatToStr( (TThread.GetTickCount - FTickCountInference) / 1000);
     if Language = 0 then
-      Label1.Text :=  IntToStr(FFPSTotal div FFPSCount) + ' : кадр/с'
+      Label1.Text :=  IntToStr(FFPSTotal div FFPSCount) + ' : РєР°РґСЂ/СЃ'
     else if Language = 1 then
       Label1.Text := IntToStr(FFPSTotal div FFPSCount) + ' : fps';
 
@@ -2654,7 +2654,7 @@ begin
   try
   if Assigned(Camera) then
   begin
-    if (Camera.Active = True) or (Button3.Text = 'Стоп') or (Button3.Text = 'Stop') then
+    if (Camera.Active = True) or (Button3.Text = 'РЎС‚РѕРї') or (Button3.Text = 'Stop') then
     begin
       Timer1.Enabled := False;
 
@@ -2664,8 +2664,8 @@ begin
       Camera:= nil;
       if Language = 0 then
       begin
-        Button3.Text := 'Старт';
-        Label1.Text := '0 : кадр/с';
+        Button3.Text := 'РЎС‚Р°СЂС‚';
+        Label1.Text := '0 : РєР°РґСЂ/СЃ';
       end
       else if Language = 1 then
       begin
@@ -2770,7 +2770,7 @@ begin
 
               if FResult <> 0 then
               begin
-                MessageBox(0, PWideChar('Камера ' + Camera.Devices[CameraIndex].Name + ' используется другим приложением, в приложении для звонков, мессенджерах, стриминга и т.д. выберите устройство с названием SD Virtual Camera'), 'SD Virtual Camera', 0);
+                MessageBox(0, PWideChar('РљР°РјРµСЂР° ' + Camera.Devices[CameraIndex].Name + ' РёСЃРїРѕР»СЊР·СѓРµС‚СЃСЏ РґСЂСѓРіРёРј РїСЂРёР»РѕР¶РµРЅРёРµРј, РІ РїСЂРёР»РѕР¶РµРЅРёРё РґР»СЏ Р·РІРѕРЅРєРѕРІ, РјРµСЃСЃРµРЅРґР¶РµСЂР°С…, СЃС‚СЂРёРјРёРЅРіР° Рё С‚.Рґ. РІС‹Р±РµСЂРёС‚Рµ СѓСЃС‚СЂРѕР№СЃС‚РІРѕ СЃ РЅР°Р·РІР°РЅРёРµРј SD Virtual Camera'), 'SD Virtual Camera', 0);
               end;
 
               Camera.Active := False;
@@ -2778,7 +2778,7 @@ begin
             end;
 
             if Language = 0 then
-              Button3.Text := 'Стоп'
+              Button3.Text := 'РЎС‚РѕРї'
             else if Language = 1 then
               Button3.Text:= 'Stop';
 
