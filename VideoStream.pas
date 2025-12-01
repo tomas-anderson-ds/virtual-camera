@@ -1,9 +1,6 @@
 //---------------------------------------------------------------------
 // Video Stream 1.6
-// Copyright (c) 2018-2021 WINSOFT
 //---------------------------------------------------------------------
-
-//{$define TRIAL} // trial version, comment this line for full version
 
 unit VideoStream;
 
@@ -531,5 +528,6 @@ begin
   Active := False;
 end;
 {$endif D104PLUS}
+
 
 end.
