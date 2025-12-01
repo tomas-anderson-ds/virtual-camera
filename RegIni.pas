@@ -179,8 +179,5 @@ begin
 
   inherited;
 end;
-
 end.
-	  
-	  }
-
+	
