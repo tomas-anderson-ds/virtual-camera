@@ -1,12 +1,6 @@
 //---------------------------------------------------------------------
-//
 // Camera for FireMonkey component
-//
-// Copyright (c) 2016-2022 WINSOFT
-//
 //---------------------------------------------------------------------
-
-//{$define TRIAL} // trial version, comment this line for full version
 
 unit FCamera;
 
@@ -4052,5 +4046,6 @@ function TFSampleGrabberCB.BufferCB(SampleTime: Double; Buffer: PByte; BufferLen
 begin
   Result := S_OK;
 end;
+
 
 end.
