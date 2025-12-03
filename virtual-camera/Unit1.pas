@@ -129,11 +129,11 @@ type
     segment_model_file_name: PAnsiChar;
     b_name: PAnsiChar;
     face_mesh_model_file_name: PAnsiChar;
-    //MNN_FORWARD_CPU = 0
-    //MNN_FORWARD_CUDA = 2,
-    //MNN_FORWARD_OPENCL = 3
-    //MNN_FORWARD_AUTO = 4
-    ForwardType: Int32 = 2;//MNN_FORWARD_CUDA
+    //CPU = 0
+    //CUDA = 2,
+    //OPENCL = 3
+    //AUTO = 4
+    ForwardType: Int32 = 2;//CUDA
     PlatformSize: Int32 = 0;
     PlatformId: Int32 = 0;
     DeviceId: Int32 = 0;
@@ -157,7 +157,6 @@ type
   // TFunction_012 = function(cam: Pointer): Bool; stdcall;
   // connected
   TFunction_013 = function(cam: Pointer): Bool; stdcall;
-
   TFunction_014 = function(serial: PAnsiChar): Int32; stdcall;
   // face mesh
   TFunction_017 = function(input_image: Pointer; input_image_size: Int32; output_data: Pointer; output_data_size: Int32): Float32; stdcall;
@@ -2882,3 +2881,4 @@ begin
 end;
 
 end.
+
